@@ -1,6 +1,6 @@
+import 'package:belajar_api_1/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:restapi/main.dart';
 
 class Edit extends StatefulWidget {
   final List list;
@@ -15,7 +15,7 @@ class _EditState extends State<Edit> {
   late TextEditingController content;
   void editData() {
     var url = Uri.parse(
-        "http://http://192.168.100.168/restapi/update.php"); //update api calling
+        'http://192.168.100.168/restapi/update.php'); //update api calling
     http.post(url, body: {
       'id': widget.list[widget.index]['id'],
       'title': title.text,

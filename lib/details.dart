@@ -1,7 +1,7 @@
+import 'package:belajar_api_1/editdata.dart';
+import 'package:belajar_api_1/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:restapi/editdata.dart';
-import 'package:restapi/main.dart';
 
 class Details extends StatefulWidget {
   List list;
@@ -14,7 +14,7 @@ class Details extends StatefulWidget {
 class _DetailsState extends State<Details> {
   void delete() {
     var url =
-        Uri.parse("http://192.168.100.168/restapi/delete.php"); //deletion api
+        Uri.parse('http://192.168.100.168/restapi/delete.php'); //deletion api
     http.post(url, body: {'id': widget.list[widget.index]['id']});
   }
 

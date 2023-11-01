@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import 'details.dart';
+import 'newdata.dart';
 
 void main() => runApp(MaterialApp(
       title: "Api Test",
